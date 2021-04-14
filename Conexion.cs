@@ -32,6 +32,23 @@ namespace PruebasBBDD
                 throw e;
             }
         }
+        public DataTable getPokemonPorId(int _id)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon WHERE id='" + _id + "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader(); //guardo el resultado de la consulta (Query)
+                DataTable pokemons = new DataTable(); //formato que espera el datagridview
+                pokemons.Load(resultado); //Convierte MySqlDataReader en DataTable
+                conexion.Close();
+                return pokemons;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
 
     }
 }
