@@ -20,6 +20,7 @@ namespace PruebasBBDD
             InitializeComponent();
             misPokemons = miConexion.getPokemons();
             dataGridView1.DataSource = misPokemons;
+
         }
 
     }

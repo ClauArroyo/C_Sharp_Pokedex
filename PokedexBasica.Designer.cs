@@ -47,7 +47,7 @@ namespace PruebasBBDD
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(48, 449);
+            this.button1.Location = new System.Drawing.Point(48, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 94);
             this.button1.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace PruebasBBDD
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(236, 449);
+            this.button2.Location = new System.Drawing.Point(160, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 94);
             this.button2.TabIndex = 2;

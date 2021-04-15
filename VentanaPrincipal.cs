@@ -18,7 +18,14 @@ namespace PruebasBBDD
 
         private void button2_Click(object sender, EventArgs e)
         {
+            PokedexBasica ventana = new PokedexBasica();
+            ventana.Show();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 ventana = new Form1();
+            ventana.Show();
         }
     }
 }
