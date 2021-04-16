@@ -63,6 +63,16 @@ namespace PruebasBBDD.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo_evolucion {
+            get {
+                object obj = ResourceManager.GetObject("fondo_evolucion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_pokedex {
             get {
                 object obj = ResourceManager.GetObject("fondo_pokedex", resourceCulture);

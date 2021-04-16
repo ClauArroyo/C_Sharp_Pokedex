@@ -32,6 +32,7 @@ namespace PruebasBBDD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -39,7 +40,7 @@ namespace PruebasBBDD
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(49, 88);
+            this.pictureBox1.Location = new System.Drawing.Point(49, 76);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 191);
             this.pictureBox1.TabIndex = 0;
@@ -47,7 +48,7 @@ namespace PruebasBBDD
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(294, 88);
+            this.pictureBox2.Location = new System.Drawing.Point(291, 76);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(195, 191);
             this.pictureBox2.TabIndex = 1;
@@ -55,20 +56,36 @@ namespace PruebasBBDD
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(541, 88);
+            this.pictureBox3.Location = new System.Drawing.Point(539, 76);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(193, 191);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(211, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(378, 64);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "EVOLUCIÓN";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Evolucion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.BackgroundImage = global::PruebasBBDD.Properties.Resources.fondo_evolucion;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "Evolucion";
             this.Text = "Evolucion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -83,5 +100,6 @@ namespace PruebasBBDD
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
     }
 }
