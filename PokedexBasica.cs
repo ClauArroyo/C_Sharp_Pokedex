@@ -80,13 +80,13 @@ namespace PruebasBBDD
 
         private void boton_evolucion(object sender, EventArgs e)
         {
-            Evolucion ventana = new Evolucion();
+            Evolucion ventana = new Evolucion(id:idActual);
             ventana.Show();
         }
 
         private void info_extra(object sender, EventArgs e)
         {
-            InfoExtra ventana = new InfoExtra();
+            InfoExtra ventana = new InfoExtra(id:idActual);
             ventana.Show();
         }
 
