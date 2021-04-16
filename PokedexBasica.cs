@@ -54,5 +54,41 @@ namespace PruebasBBDD
             MemoryStream ms = new System.IO.MemoryStream(img);
             return (Image.FromStream(ms));
         }
+
+        private void boton_altura(object sender, EventArgs e)
+        {
+            DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
+            datosPokemon.Text = pokemonElegido.Rows[0]["altura"].ToString();
+        }
+
+        private void boton_peso(object sender, EventArgs e)
+        {
+            DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
+            datosPokemon.Text = pokemonElegido.Rows[0]["peso"].ToString();
+        }
+
+        private void boton_especie(object sender, EventArgs e)
+        {
+            DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
+            datosPokemon.Text = pokemonElegido.Rows[0]["especie"].ToString();
+        }
+        private void boton_habitat(object sender, EventArgs e)
+        {
+            DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
+            datosPokemon.Text = pokemonElegido.Rows[0]["habitat"].ToString();
+        }
+
+        private void boton_evolucion(object sender, EventArgs e)
+        {
+            Evolucion ventana = new Evolucion();
+            ventana.Show();
+        }
+
+        private void info_extra(object sender, EventArgs e)
+        {
+            InfoExtra ventana = new InfoExtra();
+            ventana.Show();
+        }
+
     }
 }
